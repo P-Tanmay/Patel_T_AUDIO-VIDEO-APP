@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+</head>
+<body>
+	<header>
+		<span id="com_name">Flashback</span>
+	</header>
+
+	<main>
+		{{{ body }}}
+	</main>
+
+	<footer>
+
+		<ul id="url_link">
+			<li>
+				<div class="sharethis-inline-share-buttons">
+				<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				</div>
+			</li>
+		</ul>
+
+		<p class="copy">
+			&copy; Flashback, Inc
+		</p>
+	</footer>
+  <script>
+    var appData = {
+      movies : {{{ data }}}
+    }
+  </script>
+	{{#if mainpage}}
+	<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ad7982bd0b9d300137e3b02&product=inline-share-buttons' async='async'></script>
+  	<script src="/js/main.js"></script>
+	{{/if}}
+
+	{{#if videopage}}
+	<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ad7982bd0b9d300137e3b02&product=inline-share-buttons' async='async'></script>
+		<script src="/js/videoVM.js"></script>
+	{{/if}}
+</body>
+</html>
