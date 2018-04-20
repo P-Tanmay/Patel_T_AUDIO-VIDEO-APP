@@ -21,9 +21,11 @@
 
 		<ul id="url_link">
 			<li>
-				<div class="sharethis-inline-share-buttons">
-				<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-				</div>
+				<div><h6 class="footer_text">Like Now</h6></div>
+				<div class="sharethis-inline-follow-buttons"></div>
+				<div><h6 class="footer_text">Share Now</h6></div>
+				<div class="sharethis-inline-share-buttons"><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>
+
 			</li>
 		</ul>
 
@@ -36,13 +38,12 @@
       movies : {{{ data }}}
     }
   </script>
-	{{#if mainpage}}
 	<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ad7982bd0b9d300137e3b02&product=inline-share-buttons' async='async'></script>
+	{{#if mainpage}}
   	<script src="/js/main.js"></script>
 	{{/if}}
 
 	{{#if videopage}}
-	<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ad7982bd0b9d300137e3b02&product=inline-share-buttons' async='async'></script>
 		<script src="/js/videoVM.js"></script>
 	{{/if}}
 </body>
